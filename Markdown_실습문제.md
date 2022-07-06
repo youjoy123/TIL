@@ -1,7 +1,5 @@
 # Python 
 
-![img](Markdown_실습문제.assets/img.png)
-
 ### 1. 개요
 
 ![](https://wikidocs.net/images/page/5/pahkey_KRRKrp.png)
