@@ -1,6 +1,6 @@
 22.7.12
 
-## python 
+## python
 
 #### 제어문
 
@@ -10,22 +10,18 @@
 
 
 
+#### 조건문
+
 조건문의 기본? 참/거짓을 판단할 수 있는 조건식과 함께 사용
 
 ```python
 a = 10
 if a>=0
-	print('양수')
+    print('양수')
 else :
-	print('음수')
+    print('음수')
 print(a)
 ```
-
-==>출력
-
-양수
-
-10
 
 ```python
 # 1. num은 input으로 사용자에게 입력을 받으세요
@@ -39,7 +35,7 @@ else :
     print('짝수')
 ```
 
-
+#### 
 
 #### 복수 조건문
 
@@ -75,9 +71,11 @@ else:
 print('미세먼지 확인 완료')
 ```
 
-
+ 
 
 #### 중첩조건문
+
+조건문은 다른 조건문에 중첩되어 사용될 수 있음. 들여쓰기 유의할 것
 
 ```python
 dust = 80
@@ -114,9 +112,7 @@ print('미세먼지 확인 완료')
 
 위와 같이 if문에도 가능하다.
 
-
-
-
+#### 
 
 #### 조건표현식
 
@@ -130,16 +126,14 @@ Q. 실습문제 == 절대값을 계산하기 위한 코드였다...
 
 value = num if num >=0 else -num
 
-![image-20220712102748047](python2.assets/image-20220712102748047.png)
-
 
 
 #### 반복문
 
 * 반복문의 종류 <while vs for : 종료조건이 다르다!>                                                                                                                                                                         
-
+  
   - while 문 : 조건이 참인 경우 반복적으로 코드를 실행, 무한루프를 하지 않도록 종료조건이 필요
-
+  
   ```python
   a=0
   while a < 5 : #종료조건
@@ -148,23 +142,19 @@ value = num if num >=0 else -num
   print('끝')
   #5번출력됨. 
   ```
-
-  ```python
-  ```
-
   
+  
+- for 문 : 반복가능한 객체를 모두 순회하면 종료(별도로 종료조건이 필요없음)
 
-  - for 문 : 반복가능한 객체를 모두 순회하면 종료(별도로 종료조건이 필요없음)
+​                             for문은 시퀀스를 포함한 순회가능한 매체
 
-​							 for문은 시퀀스를 포함한 순회가능한 매체
-
-​		#for<변수명>in<반복가능한>:Code block
+​        #for<변수명>in<반복가능한>:Code block
 
 ```python
 #for<변수명>in<iterable>:Code block
 
 for fruit in['apple', 'mango', 'banana']
-	print(fruit)
+    print(fruit)
 print('끝')
 #apple, mango, banana 출력
 ```
@@ -174,7 +164,7 @@ print('끝')
 chars=input() ===> hi
 for char in chars :
     print(chars)====>h
-    				 i
+                     i
 #range를 이용한 문자열 순회
 
 #딕셔너리순회:딕셔너리는 기본적으로 key를 순회하며, key를 통해 값을 활용
@@ -186,7 +176,7 @@ for name in grades :
     print(name, grade[name]) ===> john 80, eric 90 출력
 ```
 
-
+#### 
 
 #### 반복문 제어
 
@@ -209,8 +199,6 @@ for i in range(10):
     print(i) ===> 0, 1, 0과 1만 필요해! 출력
 ```
 
-
-
 - continue : cotinue 이후의 코드 블록은 수행하지 않고, 다음 반복을 수행
 
 ```python
@@ -220,21 +208,15 @@ for i in tange(6):
     print(i) ===> 1 3 5 출력(0,2,4는 true 다음 출력으로 넘어가는것)
 ```
 
-
-
 - for-else : 끝까지 반복문을 실행한 이후에 else문 실행
-
-  ​				break을 통해 중간에 종료되는 경우 else문은 실행되지 않음
+  
+  ​                break을 통해 중간에 종료되는 경우 else문은 실행되지 않음
 
 ```python
 for char in 'apple':
     if char == 'b'
-    	print('b!')
+        print('b!')
         break
 else:
     print('b가 없습니다.') => b가 없습니다. 출력
 ```
-
-
-
-![image-20220712115812976](python2.assets/image-20220712115812976.png)

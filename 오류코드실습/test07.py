@@ -5,6 +5,6 @@ count=0
 
 for number in number_list:
     total += number
-    count += 1
+    count += 1 #들여쓰기를 통해 count +1 이 되도록 해야하며
 
 print(total / count)
